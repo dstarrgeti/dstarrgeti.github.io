@@ -1,25 +1,75 @@
 body{
   font-family: "Roboto",Helvetica,Arial,sans-serif;
-  color: #E32845;
+  color: #000;
   font-size: 16px;
 }
 .bg-grey{
   background: #0e0e0e;
 }
-
+.btn-primary{
+  background: #E32845;
+  border: none;
+}
+h1{
+  color: #E32845;
+}
 h2{
   text-transform: uppercase;
+  color: #E32845;
 }
 p{
-  color: white;
+  color: black;
+}
+a{
+  color: #E32845;
+}
+.section-title{
+  margin-bottom: 30px;
+  flex-direction: column;
+  color: #E32845;
+  .fa{
+    color: #E32845;
+  }
 }
 section{
   padding: 94px 0px;
 }
-
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 //Nav
 .navbar{
   background-color: transparent;
+  transition: background-color 0.5s ease;
   a{
     color: white;
     text-transform: uppercase;
@@ -33,11 +83,15 @@ section{
 .navbar-expand-lg .navbar-nav .nav-link{
   padding-right: 2.5rem;
 }
+.nav-top-pos{
+  background: #131313;
+  box-shadow: 3px 1px 56px #464646;
+}
 //header
 
 .background-image{
   background: url("/img/background.jpeg");
-  height: 546px;
+  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -46,7 +100,7 @@ section{
     content: " ";
     position: absolute;
     background: #06060685;
-    height: 546px;
+    height: 100vh;
     width: 100%;
   }
   .row{
@@ -66,8 +120,13 @@ section{
 
 //about
 #about{
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
   .section-title{
-    margin-bottom: 30px;
+    flex-direction: column;
   }
   .row{
    flex-wrap: nowrap;
@@ -79,12 +138,93 @@ section{
     }
   }
   .profile-image{
-    height: 513px;
-    border-radius: 5px;
+    height: 327px;
+    border-radius: 2px;
   }
   #position-title{
     margin: 0px 0 10px 0;
     text-transform: uppercase;
     font-size: 25px;
+  }
+}
+
+//portfolio
+
+#portfolio{
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+  p{
+    color: white;
+  }
+  .portfolio-item{
+    position: relative;
+    background: url('/img/example_website1.png');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    flex-grow: 1;
+    margin: 15px;
+    transition: background 1s ease;
+    cursor: pointer;
+    border-radius: 2px;
+    .caption {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.7);
+      -webkit-transition: all ease .5s;
+      -moz-transition: all ease .5s;
+      transition: all ease .5s;
+      &:hover{
+        opacity: 1;
+      }
+      .caption-content {
+        position: absolute;
+        top: 46%;
+        width: 100%;
+        height: 20px;
+        margin-top: -12px;
+        text-align: center;
+        font-size: 15px;
+        color: #fff;
+      }
+    }
+    &:first-child{
+      background: url('/img/example_website2.jpg');
+      background-size: cover;
+      margin-left: 0;
+    }
+    &:nth-child(2){
+      background: url('/img/example_website3.jpg');
+      background-size: cover;
+    }
+    &:nth-child(4){
+      background: url('/img/example_website4.jpg');
+      background-size: cover;
+      margin-left: 0;
+    }
+    &:nth-child(5){
+      background: url('/img/example_website5.jpg');
+      background-size: cover;
+    }
+    &:nth-child(6){
+      background: url('/img/example_website6.jpg');
+      background-size: cover;
+    }
+  }
+}
+
+//contact
+#contact{
+  .row{
+    flex-wrap: nowrap;
+    p{
+      width: 25%;
+      margin-right: 30px;
+    }
   }
 }
