@@ -1,0 +1,10 @@
+{
+  "name": "dstarrgeti.github.io",
+  "version": "0.0.1",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^3.1.0",
+    "gulp": "^3.9.1"
+  }
+}
