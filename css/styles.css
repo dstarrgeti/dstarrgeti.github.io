@@ -33,6 +33,18 @@ a {
 section {
   padding: 94px 0px; }
 
+/* Region On Scroll Animations */
+.js.cssanimations.no-touch [data-animation] {
+  opacity: 0; }
+
+.js.cssanimations.no-touch .animated[data-animation] {
+  opacity: 1; }
+
+/* End region On Scroll Animations */
+.obfuscate {
+  unicode-bidi: bidi-override;
+  direction: rtl; }
+
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -72,7 +84,7 @@ section {
   color: white; }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 2.5rem; }
+  /*padding-right: 2.5rem;*/ }
 
 .nav-top-pos {
   background: #131313;
