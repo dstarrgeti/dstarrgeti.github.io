@@ -134,6 +134,10 @@ section{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0px -91px;
+  @media (max-width: 736px) {
+    background-attachment: initial;
+    background-position: 0px 0px;
+  }
   &:before{
     content: " ";
     position: absolute;
@@ -147,6 +151,7 @@ section{
     top: 284px;
     @media (max-width: 736px) {
       margin: 2px;
+      top: 120px;
     }
   }
   h1{
@@ -172,13 +177,15 @@ section{
   .section-title{
     flex-direction: column;
     @media (max-width: 736px) {
-      margin-left: 9px;
+      margin-left: 22px !important;
     }
   }
   .row{
    flex-wrap: nowrap;
+    margin-left: -19px;
     @media (max-width: 736px){
       flex-direction: column;
+      margin-left: 0px;
     }
     .item{
       margin: 0px 22px;
@@ -206,6 +213,9 @@ section{
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 2s;
+  .row{
+    margin-left: 0;
+  }
   p{
     color: white;
     @media (max-width: 736px) {
@@ -282,6 +292,7 @@ section{
 #contact{
   .row{
     flex-wrap: nowrap;
+    margin-left: 0;
     @media (max-width: 736px) {
       flex-wrap: wrap;
       margin: 2px;

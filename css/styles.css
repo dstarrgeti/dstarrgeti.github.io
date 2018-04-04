@@ -117,6 +117,10 @@ section {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0px -91px; }
+  @media (max-width: 736px) {
+    .background-image {
+      background-attachment: initial;
+      background-position: 0px 0px; } }
   .background-image:before {
     content: " ";
     position: absolute;
@@ -129,7 +133,8 @@ section {
     top: 284px; }
     @media (max-width: 736px) {
       .background-image .row {
-        margin: 2px; } }
+        margin: 2px;
+        top: 120px; } }
   .background-image h1 {
     color: white;
     font-size: 4em;
@@ -153,12 +158,14 @@ section {
     flex-direction: column; }
     @media (max-width: 736px) {
       #about .section-title {
-        margin-left: 9px; } }
+        margin-left: 22px !important; } }
   #about .row {
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    margin-left: -19px; }
     @media (max-width: 736px) {
       #about .row {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-left: 0px; } }
     #about .row .item {
       margin: 0px 22px; }
   #about .profile-image {
@@ -182,6 +189,8 @@ section {
   -o-animation: fadein 2s;
   /* Opera < 12.1 */
   animation: fadein 2s; }
+  #portfolio .row {
+    margin-left: 0; }
   #portfolio p {
     color: white; }
     @media (max-width: 736px) {
@@ -243,7 +252,8 @@ section {
       background-size: cover; }
 
 #contact .row {
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  margin-left: 0; }
   @media (max-width: 736px) {
     #contact .row {
       flex-wrap: wrap;
