@@ -21,7 +21,7 @@ Create a portfolio website for yourself. Convert the following images to HTML/CS
   * Animate css
   * Google Font - Roboto
   
-#Breakdown of website:
+##Breakdown of website:
   * Create effect for navigation that transitions to a solid background on scroll
   * Create scroll animation when clicking on each section in the navigation. Make sure each tab links to the appropriate section
   * Provide a photo and a description of your experience in the About section
