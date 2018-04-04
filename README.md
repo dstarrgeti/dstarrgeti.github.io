@@ -37,3 +37,6 @@ Create a portfolio website for yourself. Convert the following images to HTML/CS
 
 # Project Deadline:
   * We would like to see this completed in a week but if you have a big workload please let us know and we can give you more time.
+
+# Link to completed project:
+  * https://dstarrgeti.github.io/
