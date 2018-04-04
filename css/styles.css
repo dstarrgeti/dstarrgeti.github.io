@@ -29,12 +29,19 @@ a {
   color: #E32845; }
   @media (max-width: 736px) {
     .section-title {
-      margin: 2px; } }
+      margin: 2px;
+      margin-bottom: 12px; } }
+  @media (max-width: 736px) {
+    .section-title .item {
+      margin: 0px !important; } }
   .section-title .fa {
     color: #E32845; }
 
 section {
   padding: 94px 0px; }
+  @media (max-width: 736px) {
+    section {
+      padding: 38px 0px; } }
 
 /* Region On Scroll Animations */
 .js.cssanimations.no-touch [data-animation] {
@@ -93,6 +100,16 @@ section {
   background: #131313;
   box-shadow: 3px 1px 56px #464646; }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%; }
+
 .background-image {
   background: url("/img/background.jpeg");
   height: 100vh;
@@ -103,13 +120,13 @@ section {
   .background-image:before {
     content: " ";
     position: absolute;
-    background: #06060685;
+    background: #060606cf;
     height: 100vh;
     width: 100%; }
   .background-image .row {
     flex-direction: column;
     position: relative;
-    top: 222px; }
+    top: 284px; }
     @media (max-width: 736px) {
       .background-image .row {
         margin: 2px; } }
@@ -117,6 +134,8 @@ section {
     color: white;
     font-size: 4em;
     text-transform: uppercase; }
+    .background-image h1 span {
+      color: #E32845; }
   .background-image h2 {
     font-style: italic; }
 
@@ -132,6 +151,9 @@ section {
   animation: fadein 2s; }
   #about .section-title {
     flex-direction: column; }
+    @media (max-width: 736px) {
+      #about .section-title {
+        margin-left: 9px; } }
   #about .row {
     flex-wrap: nowrap; }
     @media (max-width: 736px) {
@@ -142,6 +164,9 @@ section {
   #about .profile-image {
     height: 327px;
     border-radius: 2px; }
+    @media (max-width: 736px) {
+      #about .profile-image {
+        height: 341px; } }
   #about #position-title {
     margin: 0px 0 10px 0;
     text-transform: uppercase;
@@ -159,6 +184,9 @@ section {
   animation: fadein 2s; }
   #portfolio p {
     color: white; }
+    @media (max-width: 736px) {
+      #portfolio p {
+        margin: 0px 0px 10px; } }
   #portfolio .portfolio-item {
     position: relative;
     background: url("/img/example_website1.png");
@@ -218,7 +246,9 @@ section {
   flex-wrap: nowrap; }
   @media (max-width: 736px) {
     #contact .row {
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      margin: 2px;
+      margin-bottom: 12px; } }
   #contact .row p {
     width: 25%;
     margin-right: 30px; }
