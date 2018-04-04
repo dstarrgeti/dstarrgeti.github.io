@@ -27,6 +27,9 @@ a{
   margin-bottom: 30px;
   flex-direction: column;
   color: #E32845;
+  @media (max-width: 736px) {
+    margin: 2px;
+  }
   .fa{
     color: #E32845;
   }
@@ -122,6 +125,9 @@ section{
     flex-direction: column;
     position: relative;
     top: 222px;
+    @media (max-width: 736px) {
+      margin: 2px;
+    }
   }
   h1{
     color: white;
@@ -213,6 +219,9 @@ section{
       background: url('/img/example_website2.jpg');
       background-size: cover;
       margin-left: 0;
+      @media (max-width: 736px) {
+        margin: 15px;
+      }
     }
     &:nth-child(2){
       background: url('/img/example_website3.jpg');
@@ -222,6 +231,9 @@ section{
       background: url('/img/example_website4.jpg');
       background-size: cover;
       margin-left: 0;
+      @media (max-width: 736px) {
+        margin: 15px;
+      }
     }
     &:nth-child(5){
       background: url('/img/example_website5.jpg');
@@ -238,9 +250,15 @@ section{
 #contact{
   .row{
     flex-wrap: nowrap;
+    @media (max-width: 736px) {
+      flex-wrap: wrap;
+    }
     p{
       width: 25%;
       margin-right: 30px;
+      @media (max-width: 736px) {
+        width: 100%;
+      }
     }
   }
 }

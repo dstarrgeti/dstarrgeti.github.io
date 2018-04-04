@@ -27,6 +27,9 @@ a {
   margin-bottom: 30px;
   flex-direction: column;
   color: #E32845; }
+  @media (max-width: 736px) {
+    .section-title {
+      margin: 2px; } }
   .section-title .fa {
     color: #E32845; }
 
@@ -107,6 +110,9 @@ section {
     flex-direction: column;
     position: relative;
     top: 222px; }
+    @media (max-width: 736px) {
+      .background-image .row {
+        margin: 2px; } }
   .background-image h1 {
     color: white;
     font-size: 4em;
@@ -188,6 +194,9 @@ section {
       background: url("/img/example_website2.jpg");
       background-size: cover;
       margin-left: 0; }
+      @media (max-width: 736px) {
+        #portfolio .portfolio-item:first-child {
+          margin: 15px; } }
     #portfolio .portfolio-item:nth-child(2) {
       background: url("/img/example_website3.jpg");
       background-size: cover; }
@@ -195,6 +204,9 @@ section {
       background: url("/img/example_website4.jpg");
       background-size: cover;
       margin-left: 0; }
+      @media (max-width: 736px) {
+        #portfolio .portfolio-item:nth-child(4) {
+          margin: 15px; } }
     #portfolio .portfolio-item:nth-child(5) {
       background: url("/img/example_website5.jpg");
       background-size: cover; }
@@ -204,6 +216,12 @@ section {
 
 #contact .row {
   flex-wrap: nowrap; }
+  @media (max-width: 736px) {
+    #contact .row {
+      flex-wrap: wrap; } }
   #contact .row p {
     width: 25%;
     margin-right: 30px; }
+    @media (max-width: 736px) {
+      #contact .row p {
+        width: 100%; } }
