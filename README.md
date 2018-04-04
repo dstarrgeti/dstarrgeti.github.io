@@ -1,6 +1,7 @@
 # ![lbdi](img/Dancor_Solutions_Logo.png) | ![lbdi](img/INNOVATE-Logo.png)
 # Front End Development Test
 Create a portfolio website for yourself. Convert the following images to HTML/CSS/JS and host on Github. Be creative!
+
 ![lbdi](img/desktop_version.png)
 ## Requirements:
   * Ensure website is responsive
