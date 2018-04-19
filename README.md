@@ -28,15 +28,15 @@ Create a portfolio website for yourself. Convert the following image to HTML/CSS
   * Create hover effect for portfolio items in the Portfolio section and use your own example websites to link out to
   * Put together form and general contact information for the Contact section
 
-# Bonus:
+## Bonus:
   * You can use animate.css to spice things up
-  * Get the contact form working
+  * Provide php code for a working contact form
   
-# Delivery:
+## Delivery:
   * Please send us the link to your Github site once it's complete
 
-# Project Deadline:
+## Project Deadline:
   * We would like to see this completed in a week but if you have a big workload please let us know and we can give you more time.
 
-# Link to completed project:
+## Link to completed project:
   * https://dstarrgeti.github.io/
